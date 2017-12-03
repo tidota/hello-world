@@ -1,0 +1,50 @@
+- upward
+git add .
+git commit -m <comment>
+git push <alias> <branch>
+
+- downward
+git pull <alias> <branch>
+git checkout <branch>
+git reset
+
+- extend
+git commit -m <comment>
+
+- switch to another branch
+git checkout <branch>
+
+- switch to another commit
+git reset --hard <id>
+
+- split
+git branch <new branch>
+git checkout <new branch>
+   or
+git checkout -b <new branch>
+
+- merge
+git merge <branch to merge>
+   or
+git merge --no-ff <branch to merge>
+
+- merging with conflicts
+git merge <branch to merge>
+git diff
+vi <file>
+git add <file>
+git commit -m <comment>
+- abort merging
+git reset
+git checkout -- <file>
+
+
+
+=====
+- restore a repo from the remote one
+git clone <URL>
+- rename the alias
+git remote rename origin <new alias>
+- pull a branch which does not exist in the local repo
+git fetch <alias> <branch to pull>:<branch to create>
+
