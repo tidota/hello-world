@@ -3,41 +3,60 @@
 This is just for my personal practice. I leave some notes so that I can review them in case I forget some commands to use git (and some other stuff).
 
 # Diagrams
-Some parts could be wrong...
+Some parts could be incomplete and even wrong. Don't trust me...
 
 ## Flow of updates between locations 
+![Flow of Updates](./img/flow.png)
+
 ### upward
+```
 git add .
 git commit -m <comment>
 git push <alias> <branch>
+```
 
 ### downward
+```
 git pull <alias> <branch>
 git checkout <branch>
 git reset
+```
 
 
 ## Transitions between commits by git commands
+![Transitions between commits](./img/commits.png)
 
-- extend git commit -m <comment>
+commit
+```
+git commit -m <comment>
+```
 
-- switch to another branch
+switch to another branch
+```
 git checkout <branch>
+```
 
-- switch to another commit
-git reset --hard <id>
+move to another commit
+```
+git reset --hard <commit id>
+```
 
-- split
+branch (and switch to the new branch)
+```
 git branch <new branch>
 git checkout <new branch>
    or
 git checkout -b <new branch>
+```
 
-- merge
+merge
+```
 git merge <branch to merge>
-   or
+```
+merge (no fast forward: keeps the trajectory of the branch anyway)
+```
 git merge --no-ff <branch to merge>
-
+```
 
 # Memoranda
 
