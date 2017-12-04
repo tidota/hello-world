@@ -38,7 +38,16 @@ git commit -m <comment>
 git reset
 git checkout -- <file>
 
+- delete a local branch
+git branch -d <branch>
+- delete a remote branch
+git push <alias> :<branch>
 
+
+- temporary save updates
+git stash
+- restore the saved updates
+git stash pop
 
 =====
 - restore a repo from the remote one
