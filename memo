@@ -45,6 +45,16 @@ git checkout -- <file>
 git clone <URL>
 - rename the alias
 git remote rename origin <new alias>
-- pull a branch which does not exist in the local repo
+- track a branch which does not exist in the local repo
 git fetch <alias> <branch to pull>:<branch to create>
+   or
+git branch <branch> <alias>/<branch>
+
+=====
+- make a remote repo from the local
+git clone --bare <directory> <URL>
+git remote add <alias> <URL>
+git fetch <alias>
+git branch --set-upstream-to=<alias>/<branch> <branch>
+
 
