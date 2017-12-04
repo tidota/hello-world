@@ -46,8 +46,6 @@ git clone <URL>
 - rename the alias
 git remote rename origin <new alias>
 - track a branch which does not exist in the local repo
-git fetch <alias> <branch to pull>:<branch to create>
-   or
 git branch <branch> <alias>/<branch>
 
 =====
