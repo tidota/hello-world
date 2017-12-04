@@ -1,7 +1,7 @@
 # What is this?
 
 This is just for my personal practice. I left some notes so that I can review them in case I forget some commands to use git (and maybe some other stuff).
-Although most of the parts including the diagrams are now trifling to me, I hope they can be helpful to understand git for some of you who are starting to learn it.
+Most of the parts including the diagrams are now trifling to me, though... I don't know why I was so motivated to draw these diagrams.
 
 # Diagrams
 Some parts could be incomplete and even wrong. Don't trust me...
