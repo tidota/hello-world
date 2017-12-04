@@ -6,6 +6,8 @@ This is just for my personal practice. I leave some notes so that I can review t
 Some parts could be wrong...
 
 ## Flow of updates between locations 
+![Flow of Updates](./img/flow.png)
+
 ### upward
 git add .
 git commit -m <comment>
@@ -18,6 +20,7 @@ git reset
 
 
 ## Transitions between commits by git commands
+![Transitions between commits](./img/commits.png)
 
 - extend git commit -m <comment>
 
