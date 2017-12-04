@@ -38,13 +38,30 @@ git commit -m <comment>
 git reset
 git checkout -- <file>
 
+- delete a local branch
+git branch -d <branch>
+- delete a remote branch
+git push <alias> :<branch>
 
+
+- temporary save updates
+git stash
+- restore the saved updates
+git stash pop
 
 =====
 - restore a repo from the remote one
 git clone <URL>
 - rename the alias
 git remote rename origin <new alias>
-- pull a branch which does not exist in the local repo
-git fetch <alias> <branch to pull>:<branch to create>
+- track a branch which does not exist in the local repo
+git branch <branch> <alias>/<branch>
+
+=====
+- make a remote repo from the local
+git clone --bare <directory> <URL>
+git remote add <alias> <URL>
+git fetch <alias>
+git branch --set-upstream-to=<alias>/<branch> <branch>
+
 
