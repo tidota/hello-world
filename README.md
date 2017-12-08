@@ -68,6 +68,10 @@ git config --global user.email "foo@bar.com"
 git config --global color.ui auto
 git config --global alias.graph "log --graph --date-order --all --pretty=format:'%h %Cred%d %Cgreen%ad %Cblue%cn %Creset%s' --date=short"
 ```
+if you use HTTPS and want to cache the password,
+```
+git config --global credential.helper cache
+```
 
 ## Merging with conflicts
 ```
